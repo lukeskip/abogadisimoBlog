@@ -1,0 +1,408 @@
+$primary : #0088CE;
+$secondary :#04AC25;
+$secondary-light :#D3FCDA;
+$palid-red: #FD6D92;
+$gray: #606060;
+$masonry-css-column-gap: 10px;
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700');
+
+body{
+    background: $palid-red;
+}
+
+body.mobile{
+    margin-top:60px;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+}
+
+h1.tagline, h2.tagline{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+*.tagline{
+    color:$palid-red;
+}
+
+*.tagline span:first-child{
+    color:$primary;
+}
+
+
+
+header .topbar{
+    height: 60px;
+    background: $primary;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 11;
+    display:none;
+}
+
+body.admin-bar .topbar{
+    top:32px;
+}
+
+body.mobile header .topbar{
+    display:block;
+}
+
+header .topbar .hamburger{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+header .hero{
+    height:30vh;
+    background: url('../img/hero.png');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .hero img{
+    width: 300px;
+}
+
+header .wrapper-menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    display:none;
+}
+
+header .wrapper-menu.open{
+    display:block;
+}
+
+header .menu{
+    background: $palid-red;
+}
+
+header .menu ul{
+    display:flex;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: space-around
+}
+
+header .menu ul li{
+    height:100%;
+    
+}
+
+
+
+header .menu ul li a{
+    color:white;
+    display: inline-block;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+header .menu ul li a:hover{
+    color:white;
+}
+
+body.mobile header .menu{
+    background: $palid-red;
+    width: 250px;
+    max-width: 300px;
+    height: 100vh;
+    position:fixed;
+    color:white;
+    top:0;
+    left: -250px;
+    -webkit-transition: left 500ms; /* Safari */
+    transition: left 500ms;
+    z-index: 11;
+    padding-top:40px;
+}
+
+body.mobile header .menu.open{
+    left: 0;
+}
+
+body.mobile header .menu ul{
+    display: block;
+    text-align: left;
+}
+
+body.mobile header .menu ul li{
+    display:block;
+    height: auto;
+}
+
+.container {
+    max-width: 1500px;
+    margin:auto;
+    padding: 20px 70px 20px 20px;
+    background: white;
+
+
+}
+
+.container.full {
+    padding: 0;
+}
+
+.masonry-css {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+   
+
+.masonry-css-item {
+    margin-bottom: 1.5rem;
+    background: #EEE;
+    width: 32%;
+    
+}
+
+.masonry-css-item:nth-child(6n+1),.masonry-css-item:nth-child(6n+2) {
+    width:49%;
+}
+
+
+
+.masonry-css-item:nth-child(6n+3) {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.masonry-css-item:nth-child(6n+3){
+    background: white;
+    
+}
+
+.masonry-css-item:nth-child(6n+3) .info{
+    padding-top: 0;
+}
+
+.masonry-css-item:nth-child(6n+3) .image {
+    width:49%;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+
+
+.masonry-css-item:nth-child(6n+3) .info {
+    width:49%;
+}
+
+.masonry-css-item:nth-child(6n+3).no-image .info {
+    width:100%;
+}
+
+
+.masonry-css-item .info{
+    padding:20px;
+}
+
+.masonry-css-item h4{
+  color:$primary;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.masonry-css-item .description{
+    color:$gray;
+    line-height: 1.3em;
+}
+
+.masonry-css-item .link a{
+    font-style: italic;
+    font-weight: 700;
+    color:$palid-red;
+
+}
+/*************************************
+STARTS: SINGLE CONTENT
+**************************************/
+.single-post .content{
+    margin-left:200px;
+    max-width: 700px;
+    color:#606060;
+}
+
+.single-post .content div,.content iframe,{
+    width:100%!important;
+    max-width:100%;
+}
+
+.content iframe{
+    width:110%!important;
+    max-width:110%!important;
+    margin-left:-10%!important;
+}
+
+iframe[id^='twitter-widget-']{ width:100% !important;}
+
+
+.single-post h1{
+    color:$primary;
+}
+
+.single-post .content .excerpt{
+    font-style: italic;
+}
+.single-post .image {
+    margin-bottom: 40px;
+}
+
+.single-post .image .caption,.wp-caption-text{
+    margin-left:-10%;
+    font-size: .8em;
+    font-style: italic;
+}
+.wp-caption-text{
+    margin-left:0;
+}
+
+.single-post  img{
+    width: 110%;
+    margin-left:-10%;
+    max-width: 110%;
+}
+
+.single-post .content div.meta-info{
+    max-width: 350px;
+    float: left;
+    margin-left:-10%;
+    margin-right:20px;
+} 
+/*************************************
+ENDS: SINGLE CONTNET
+**************************************/
+
+
+/*************************************
+STARTS: RELATED
+**************************************/
+.content div.related{
+    // background: #EEE;
+    padding: 20px 10px;
+    margin-bottom:20px;
+    border-right:2px solid $palid-red;
+    width:auto!important;
+}
+
+.content .related h3{
+    color:$palid-red;
+}
+
+.related h4{
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    
+}
+
+.content .related h4 a{
+    color:$primary;
+    
+}
+
+
+/*************************************
+ENDS: RELATED
+**************************************/
+
+/*************************************
+STARTS: QUERIES
+**************************************/
+@media only screen and (max-width: 900px) {
+    .single-post .content{
+        margin-left:0;
+    }
+
+    .single-post .content div.meta-info{
+        max-width:100%;
+        margin:0;
+    }
+
+    .single-post .meta-info .related{
+        border:0;
+        margin:0;
+    }
+
+    .single-post img{
+        width:100%;
+    }
+    .single-post .content .meta-info, .single-post img,.single-post .image .caption{
+        margin-left:0;
+    }
+
+    .content iframe{
+        width:100%!important;
+        max-width:100!important;
+        margin-left:0%!important;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .masonry-css {
+        display:block;
+    }
+
+    .masonry-css-item:nth-child(n),.masonry-css-item:nth-child(n) .image,.masonry-css-item:nth-child(n) .info{
+        width:100%;
+    }
+
+
+
+}
+
+/*************************************
+ENDS: QUERIES
+**************************************/
+
+/*************************************
+STARTS: FOOTER
+**************************************/
+footer{
+    height: 50px;
+    background: $palid-red;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+/*************************************
+ENDS: FOOTER
+**************************************/
+
+
+  
+
+
