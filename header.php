@@ -9,11 +9,18 @@
   <body <?php body_class(); ?>>
 		<header>
 			<div class="hero">
-				<a href="<?php bloginfo('url'); ?>"><img class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo_monkeys.png" alt=""></a>
-					
+				<div class="logo">
+					<a href="<?php bloginfo('url'); ?>"><img class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo-abogadisimo.png" alt=""></a>
+					<h1 class="tagline">
+						<?php echo get_bloginfo('description'); ?>
+					</h1>
+				</div>
 			</div>
 			<nav class="main">
 				<div class="topbar">
+					<div class="logo">
+						<a  href="<?php bloginfo('url'); ?>"><img width="150px" class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo-abogadisimo-white.png" alt=""></a>
+					</div>
 					<button class="hamburger hamburger--spin" type="button">
 						<span class="hamburger-box">
 							<span class="hamburger-inner"></span>

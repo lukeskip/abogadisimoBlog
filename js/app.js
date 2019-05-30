@@ -30,4 +30,14 @@ jQuery(document).ready(function($){
         $('.hamburger').toggleClass('is-active');
         $('.wrapper-menu').toggleClass('open');
     }
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 100) { // this refers to window
+            $('.topbar').addClass('back');
+            $('.topbar .logo').fadeIn('fast');
+        }else{
+            $('.topbar .logo').fadeOut('fast');
+            $('.topbar').removeClass('back');
+        }
+    });
 });

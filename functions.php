@@ -1,8 +1,6 @@
 <?php
 
-add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-// ENDS: TEMPLATE SUPPORT
-function jess_enqueue() {
+function abogaisimo_enqueue() {
 
     wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/css/foundation.min.css' );
     wp_enqueue_style( 'hamburguers', get_stylesheet_directory_uri() . '/css/hamburgers.min.css' );
@@ -11,22 +9,7 @@ function jess_enqueue() {
     wp_enqueue_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array('jquery') );
 	
 }
-add_action('wp_enqueue_scripts', 'jess_enqueue');
-
-// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function html5wp_pagination()
-{
-    global $wp_query;
-    $big = 999999999;
-    echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
-    ));
-}
-
-
+add_action('wp_enqueue_scripts', 'abogaisimo_enqueue');
 
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );

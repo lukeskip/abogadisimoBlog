@@ -1,22 +1,20 @@
-$primary : #0088CE;
-$secondary :#04AC25;
-$secondary-light :#D3FCDA;
-$palid-red: #FD6D92;
-$gray: #606060;
+$primary : #606060;
+$secondary :#8D8125;
 $masonry-css-column-gap: 10px;
+$special-font: 'Playfair Display', serif;
 
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
 
 body{
-    background: $palid-red;
+    background: none;
 }
 
-body.mobile{
-    margin-top:60px;
-}
+
 
 h1,h2,h3,h4{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: $special-font;
     font-weight: 700;
 }
 
@@ -26,24 +24,37 @@ h1.tagline, h2.tagline{
 }
 
 *.tagline{
-    color:$palid-red;
+    color:$primary;
 }
 
 *.tagline span:first-child{
     color:$primary;
 }
 
-
-
 header .topbar{
     height: 60px;
-    background: $primary;
+    background: none;
     width: 100%;
     position: fixed;
     top: 0;
     left:0;
     z-index: 11;
     display:none;
+    -webkit-transition: background-color 500ms; /* Safari */
+    transition: background-color 500ms;
+}
+
+header .topbar .logo{
+    position: absolute;
+    top:10px;
+    left:20px;
+    display:none;
+}
+
+header .topbar.back{
+    background: $primary;
+    opacity: .8;
+    -moz-opacity: 0.8;
 }
 
 body.admin-bar .topbar{
@@ -59,20 +70,40 @@ header .topbar .hamburger{
     top: 0;
     right:0;
 }
+
+
+
+header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after, header .topbar.back .hamburger-inner:before{
+    background-color:white;
+}
 header .hero{
-    height:30vh;
-    background: url('../img/hero.png');
+    height:400px;
+    background: url('../img/header-abogadisimo.jpg');
     background-size: cover;
     text-align: center;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
+header .hero .logo{
+    max-width: 400px;
+    padding-top:100px;
+    margin-left: 40px;
+}
+
+header .hero .tagline{
+    font-size: 1.5em;
+    font-family: $special-font;
+    border-top:2px solid $primary;
+    padding-top:10px;
+    margin-top:10px;
+    color:$primary;
+}
+
 header .hero img{
-    width: 300px;
+    width: 400px;
 }
 
 header .wrapper-menu{
@@ -91,7 +122,7 @@ header .wrapper-menu.open{
 }
 
 header .menu{
-    background: $palid-red;
+    background: $primary;
 }
 
 header .menu ul{
@@ -116,7 +147,7 @@ header .menu ul li{
 header .menu ul li a{
     color:white;
     display: inline-block;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: $special-font;
     font-size: 1.4em;
     text-transform: capitalize;
     font-weight: 700;
@@ -127,7 +158,7 @@ header .menu ul li a:hover{
 }
 
 body.mobile header .menu{
-    background: $palid-red;
+    background: $primary;
     width: 250px;
     max-width: 300px;
     height: 100vh;
@@ -153,6 +184,14 @@ body.mobile header .menu ul{
 body.mobile header .menu ul li{
     display:block;
     height: auto;
+}
+
+h4 a{
+    color:$secondary;
+}
+
+h4 a:hover{
+    color:$secondary;
 }
 
 .container {
@@ -227,21 +266,21 @@ body.mobile header .menu ul li{
 
 .masonry-css-item h4{
   color:$primary;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: $special-font;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 1.2em;
 }
 
 .masonry-css-item .description{
-    color:$gray;
+    color:$primary;
     line-height: 1.3em;
 }
 
 .masonry-css-item .link a{
-    font-style: italic;
+    font-family: $special-font;
     font-weight: 700;
-    color:$palid-red;
+    color:$secondary;
 
 }
 /*************************************
@@ -287,7 +326,7 @@ iframe[id^='twitter-widget-']{ width:100% !important;}
     margin-left:0;
 }
 
-.single-post  img{
+.single-post .content  img{
     width: 110%;
     margin-left:-10%;
     max-width: 110%;
@@ -311,12 +350,12 @@ STARTS: RELATED
     // background: #EEE;
     padding: 20px 10px;
     margin-bottom:20px;
-    border-right:2px solid $palid-red;
+    border-right:2px solid $primary;
     width:auto!important;
 }
 
 .content .related h3{
-    color:$palid-red;
+    color:$primary;
 }
 
 .related h4{
@@ -326,7 +365,7 @@ STARTS: RELATED
 }
 
 .content .related h4 a{
-    color:$primary;
+    color:$secondary;
     
 }
 
@@ -393,7 +432,7 @@ STARTS: FOOTER
 **************************************/
 footer{
     height: 50px;
-    background: $palid-red;
+    background: $primary;
     color:white;
     text-align: center;
     padding: 20px;

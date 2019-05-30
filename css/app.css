@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
 body {
-  background: #FD6D92;
-}
-
-body.mobile {
-  margin-top: 60px;
+  background: none;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
@@ -18,22 +14,38 @@ h1.tagline, h2.tagline {
 }
 
 *.tagline {
-  color: #FD6D92;
+  color: #606060;
 }
 
 *.tagline span:first-child {
-  color: #0088CE;
+  color: #606060;
 }
 
 header .topbar {
   height: 60px;
-  background: #0088CE;
+  background: none;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 11;
   display: none;
+  -webkit-transition: background-color 500ms;
+  /* Safari */
+  transition: background-color 500ms;
+}
+
+header .topbar .logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: none;
+}
+
+header .topbar.back {
+  background: #606060;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
 }
 
 body.admin-bar .topbar {
@@ -50,19 +62,37 @@ header .topbar .hamburger {
   right: 0;
 }
 
+header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after, header .topbar.back .hamburger-inner:before {
+  background-color: white;
+}
+
 header .hero {
-  height: 30vh;
-  background: url("../img/hero.png");
+  height: 400px;
+  background: url("../img/header-abogadisimo.jpg");
   background-size: cover;
   text-align: center;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+header .hero .logo {
+  max-width: 400px;
+  padding-top: 100px;
+  margin-left: 40px;
+}
+
+header .hero .tagline {
+  font-size: 1.5em;
+  font-family: "Playfair Display", serif;
+  border-top: 2px solid #606060;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #606060;
+}
+
 header .hero img {
-  width: 300px;
+  width: 400px;
 }
 
 header .wrapper-menu {
@@ -81,7 +111,7 @@ header .wrapper-menu.open {
 }
 
 header .menu {
-  background: #FD6D92;
+  background: #606060;
 }
 
 header .menu ul {
@@ -103,7 +133,7 @@ header .menu ul li {
 header .menu ul li a {
   color: white;
   display: inline-block;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.4em;
   text-transform: capitalize;
   font-weight: 700;
@@ -114,7 +144,7 @@ header .menu ul li a:hover {
 }
 
 body.mobile header .menu {
-  background: #FD6D92;
+  background: #606060;
   width: 250px;
   max-width: 300px;
   height: 100vh;
@@ -141,6 +171,14 @@ body.mobile header .menu ul {
 body.mobile header .menu ul li {
   display: block;
   height: auto;
+}
+
+h4 a {
+  color: #8D8125;
+}
+
+h4 a:hover {
+  color: #8D8125;
 }
 
 .container {
@@ -204,8 +242,8 @@ body.mobile header .menu ul li {
 }
 
 .masonry-css-item h4 {
-  color: #0088CE;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #606060;
+  font-family: "Playfair Display", serif;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 1.2em;
@@ -217,9 +255,9 @@ body.mobile header .menu ul li {
 }
 
 .masonry-css-item .link a {
-  font-style: italic;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
-  color: #FD6D92;
+  color: #8D8125;
 }
 
 /*************************************
@@ -247,7 +285,7 @@ iframe[id^=twitter-widget-] {
 }
 
 .single-post h1 {
-  color: #0088CE;
+  color: #606060;
 }
 
 .single-post .content .excerpt {
@@ -268,7 +306,7 @@ iframe[id^=twitter-widget-] {
   margin-left: 0;
 }
 
-.single-post img {
+.single-post .content img {
   width: 110%;
   margin-left: -10%;
   max-width: 110%;
@@ -290,12 +328,12 @@ STARTS: RELATED
 .content div.related {
   padding: 20px 10px;
   margin-bottom: 20px;
-  border-right: 2px solid #FD6D92;
+  border-right: 2px solid #606060;
   width: auto !important;
 }
 
 .content .related h3 {
-  color: #FD6D92;
+  color: #606060;
 }
 
 .related h4 {
@@ -304,7 +342,7 @@ STARTS: RELATED
 }
 
 .content .related h4 a {
-  color: #0088CE;
+  color: #8D8125;
 }
 
 /*************************************
@@ -359,7 +397,7 @@ STARTS: FOOTER
 **************************************/
 footer {
   height: 50px;
-  background: #FD6D92;
+  background: #606060;
   color: white;
   text-align: center;
   padding: 20px;
