@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
     <h1 class="tagline">
-        <?php echo preg_replace('([a-zA-Z.,!?0-9]+(?![^<]*>))', '<span>$0</span>', get_the_archive_title()); ?>
+        Buscando: <?php echo get_search_query(); ?>
     </h1>
     <div class="masonry-css">
             

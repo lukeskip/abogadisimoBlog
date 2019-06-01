@@ -80,6 +80,22 @@ header .hero {
   align-items: center;
 }
 
+header .hero div {
+  z-index: 2;
+}
+
+.single-post header .hero:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
 header .hero .logo {
   max-width: 400px;
   padding-top: 100px;
@@ -255,6 +271,19 @@ STARTS: SINGLE CONTENT
   color: #606060;
 }
 
+.single-post .hero .content {
+  position: absolute;
+  bottom: 40px;
+  text-shadow: 0 0 20px #606060;
+  margin-left: 160px;
+  max-width: 740px;
+}
+
+.single-post .hero .content h1 {
+  color: white;
+  text-align: left;
+}
+
 .single-post .content div, .content iframe {
   width: 100% !important;
   max-width: 100%;
@@ -342,6 +371,14 @@ STARTS: QUERIES
     margin-left: 0;
   }
 
+  .single-post .content img {
+    margin: 0;
+  }
+
+  .single-post .hero .content {
+    margin-left: 36px;
+  }
+
   .single-post .content div.meta-info {
     max-width: 100%;
     margin: 0;
@@ -352,7 +389,7 @@ STARTS: QUERIES
     margin: 0;
   }
 
-  .single-post img {
+  .single-post .content img {
     width: 100%;
   }
 
