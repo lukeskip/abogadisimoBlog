@@ -31,6 +31,10 @@ h1.tagline, h2.tagline{
     color:$primary;
 }
 
+.button,.button:hover{
+    background: $secondary;
+}
+
 header .topbar{
     height: 60px;
     background: none;
@@ -78,7 +82,7 @@ header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after
 }
 header .hero{
     height:400px;
-    background: url('../img/header-abogadisimo.jpg');
+    background: url('../img/header-abogadisimo.jpg') center;
     background-size: cover;
     text-align: center;
     position: relative;
@@ -123,18 +127,20 @@ header .wrapper-menu.open{
 
 header .menu{
     background: $primary;
+    display:block;
 }
 
 header .menu ul{
     display:flex;
     list-style: none;
     text-align: center;
-    width: 100%;
+    width: 90%;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     align-items: center;
     align-content: space-around
+    
 }
 
 header .menu ul li{
@@ -148,9 +154,10 @@ header .menu ul li a{
     color:white;
     display: inline-block;
     font-family: $special-font;
-    font-size: 1.4em;
-    text-transform: capitalize;
+    font-size: 1.2em;
     font-weight: 700;
+    padding: 0;
+    margin-bottom:20px;
 }
 
 header .menu ul li a:hover{
@@ -197,7 +204,7 @@ h4 a:hover{
 .container {
     max-width: 1500px;
     margin:auto;
-    padding: 20px 70px 20px 20px;
+    padding: 20px;
     background: white;
 
 
@@ -217,46 +224,21 @@ h4 a:hover{
 .masonry-css-item {
     margin-bottom: 1.5rem;
     background: #EEE;
-    width: 32%;
+    width: 31%; 
+    margin-right:2%;
     
 }
 
-.masonry-css-item:nth-child(6n+1),.masonry-css-item:nth-child(6n+2) {
-    width:49%;
+.masonry-css-item:last-child {
+    flex-grow: 1;    
 }
 
-
-
-.masonry-css-item:nth-child(6n+3) {
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.masonry-css-item:nth-child(7n+4),.masonry-css-item:nth-child(7n+5) {
+    width:48%;
 }
 
-.masonry-css-item:nth-child(6n+3){
-    background: white;
-    
-}
-
-.masonry-css-item:nth-child(6n+3) .info{
-    padding-top: 0;
-}
-
-.masonry-css-item:nth-child(6n+3) .image {
-    width:49%;
-    overflow: hidden;
-    min-height: 200px;
-}
-
-
-
-.masonry-css-item:nth-child(6n+3) .info {
-    width:49%;
-}
-
-.masonry-css-item:nth-child(6n+3).no-image .info {
-    width:100%;
+.masonry-css-item:nth-child(7n+7){
+    width:65%;
 }
 
 
@@ -431,8 +413,7 @@ ENDS: QUERIES
 STARTS: FOOTER
 **************************************/
 footer{
-    height: 50px;
-    background: $primary;
+    background: $secondary;
     color:white;
     text-align: center;
     padding: 20px;

@@ -6,16 +6,9 @@
                 <h1>
                     <?php the_title(); ?>
                 </h1>
-                <div class="excerpt"><?php the_excerpt(); ?></div>
-                <div class="image">
-                    <?php the_post_thumbnail();?>
-                    <div class="caption"><?php the_post_thumbnail_caption(); ?></div>
-                </div>
-                <div class="meta-info">
-                    <?php include( locate_template('includes/related-posts-template.php', false, false) ); ?>
-                </div>
+                        
+                
                 <?php the_content(); ?>
-
             <?php endwhile; else : ?>
                 <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>

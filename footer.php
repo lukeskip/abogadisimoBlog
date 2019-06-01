@@ -1,5 +1,5 @@
 <footer>
-    Monkeys todos los derechos reservados
+    Abogadísimo todos los derechos reservados, 2019
 </footer>
 		
 <?php wp_footer();?>

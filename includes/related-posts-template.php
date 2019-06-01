@@ -2,14 +2,14 @@
     <h3>También te recomendamos...</h3>
     <?php 
         $post_id = array(get_the_ID()); 
-        query_posts( array(
+        $related = new wp_Query( array(
             'posts_per_page' => 3,
             'post__not_in' 	=> $post_id,
             'orderby'        => 'rand',
             'order'      => 'ASC',
         ));
     ?>
-    <?php if( have_posts() ): while ( have_posts() ) : the_post(); ?>
+    <?php if( $related->have_posts() ): while ( $related->have_posts() ) : $related->the_post(); ?>
         <article class="post">
             <div>
                 <div class="description">
