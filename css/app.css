@@ -8,6 +8,10 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 h1.tagline, h2.tagline {
   text-align: center;
   margin-bottom: 40px;
@@ -64,6 +68,10 @@ header .topbar .hamburger {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+header .topbar .hamburge:focus {
+  outline: none !important;
 }
 
 header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after, header .topbar.back .hamburger-inner:before {
