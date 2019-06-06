@@ -7,7 +7,7 @@
 	<?php wp_head(); ?>
 	<script src="https://kit.fontawesome.com/87d2b4918a.js"></script>
   </head>
-  <body <?php body_class(); ?>>
+  <body <?php body_class('mobile'); ?>>
 		<header>
             <div class="hero" <?php if(has_post_thumbnail()):?> style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>)" <?php endif;?>>
                 <div class="row">

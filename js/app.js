@@ -2,11 +2,11 @@
 jQuery(document).ready(function($){
     $(document).foundation();
 
-    mobile_menu();
+    // mobile_menu();
     
-    $(window).on('resize', function(){
-        mobile_menu();
-    });
+    // $(window).on('resize', function(){
+    //     mobile_menu();
+    // });
     
     $('body').on('click','.hamburger',function(){
         toggle_menu();
@@ -16,14 +16,14 @@ jQuery(document).ready(function($){
         toggle_menu();
     });
 
-    function mobile_menu(){
-        var win = $(window); 
-        if (win.width() <= 1200) {
-            $('body').addClass('mobile');
-        }else{
-            $('body').removeClass('mobile');
-        }
-    }
+    // function mobile_menu(){
+    //     var win = $(window); 
+    //     if (win.width() <= 1200) {
+    //         $('body').addClass('mobile');
+    //     }else{
+    //         $('body').removeClass('mobile');
+    //     }
+    // }
     
     function toggle_menu(){
         $('.menu').toggleClass('open');
