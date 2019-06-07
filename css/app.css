@@ -55,7 +55,7 @@ header .topbar .logo {
 }
 
 header .topbar.back {
-  background: #606060;
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0.8;
   -moz-opacity: 0.8;
 }
