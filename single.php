@@ -3,6 +3,7 @@
     <div class="row">
         <div class="content columns large-12 medium-12">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                
                 <div class="meta-info">
                     <?php include( locate_template('includes/related-posts-template.php', false, false) ); ?>
                 </div>

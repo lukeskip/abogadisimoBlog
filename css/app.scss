@@ -88,20 +88,23 @@ header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after
 }
 header .hero{
     height:60vh;
-    background: url('../img/header-abogadisimo.jpg') center;
+    background: url('../img/header-abogadisimo-v2.jpg') center;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     position: relative;
     justify-content: center;
     align-items: center;
+    padding-top: 50px; 
     
 }
+
 
 header .hero div{
     z-index: 2;
 }
 
-.single-post header .hero:after{
+header .hero:after{
     content:'';
     display: block;
     background: rgba(0,0,0,.5);
@@ -114,18 +117,18 @@ header .hero div{
 }
 
 header .hero .logo{
-    max-width: 400px;
-    padding-top:100px;
-    margin-left: 40px;
+    position:relative;
+    z-index: 3;;
 }
 
 header .hero .tagline{
     font-size: 1.5em;
     font-family: $special-font;
-    border-top:2px solid $primary;
+    border-top:2px solid white;
     padding-top:10px;
     margin-top:10px;
-    color:$primary;
+    color:white;
+    display: inline-block;
 }
 
 header .hero img{
@@ -259,9 +262,6 @@ h4 a:hover{
     width:48%;
 }
 
-.masonry-css-item:nth-child(7n+7){
-    width:65%;
-}
 
 
 .masonry-css-item .info{
@@ -294,6 +294,12 @@ STARTS: SINGLE CONTENT
     margin-left:200px;
     max-width: 700px;
     color:#606060;
+}
+
+.single-post .excerpt{
+    margin:50px auto;
+    font-style: italic;
+    border-bottom:2px solid #eeeeee;
 }
 
 .single-post .hero .content{
@@ -369,8 +375,9 @@ STARTS: RELATED
     // background: #EEE;
     padding: 20px 10px;
     margin-bottom:20px;
-    border-right:2px solid $primary;
+    // border-right:2px solid $primary;
     width:auto!important;
+    text-align: right;
 }
 
 .content .related h3{
@@ -417,6 +424,7 @@ STARTS: QUERIES
     .single-post .meta-info .related{
         border:0;
         margin:0;
+        text-align: left;
     }
 
     .single-post .content img{

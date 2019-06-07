@@ -11,7 +11,7 @@
 		<header>
 			<div class="hero">
 				<div class="logo">
-					<a href="<?php bloginfo('url'); ?>"><img class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo-abogadisimo.png" alt=""></a>
+					<a href="<?php bloginfo('url'); ?>"><img class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo-abogadisimo-white.png" alt=""></a>
 					<h1 class="tagline">
 						<?php echo get_bloginfo('description'); ?>
 					</h1>
