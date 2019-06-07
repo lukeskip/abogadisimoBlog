@@ -3,6 +3,10 @@ body {
   background: none;
 }
 
+a, a:hover {
+  color: #8D8125;
+}
+
 h1, h2, h3, h4 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
