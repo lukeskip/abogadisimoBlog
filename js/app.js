@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
     }
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 100) { // this refers to window
+        if ($(this).scrollTop() >= 200) { // this refers to window
             $('.topbar').addClass('back');
             $('.topbar .logo').fadeIn('fast');
         }else{
