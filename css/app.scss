@@ -3,9 +3,7 @@ $secondary :#8D8125;
 $masonry-css-column-gap: 10px;
 $special-font: 'Playfair Display', serif;
 
-
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
-
 
 body{
     background: none;
@@ -89,7 +87,7 @@ header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after
     background-color:white;
 }
 header .hero{
-    height:400px;
+    height:60vh;
     background: url('../img/header-abogadisimo.jpg') center;
     background-size: cover;
     text-align: center;

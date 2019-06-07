@@ -79,7 +79,7 @@ header .topbar.back .hamburger-inner, header .topbar.back .hamburger-inner:after
 }
 
 header .hero {
-  height: 400px;
+  height: 60vh;
   background: url("../img/header-abogadisimo.jpg") center;
   background-size: cover;
   text-align: center;
