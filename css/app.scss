@@ -121,8 +121,11 @@ header .hero:after{
 
 header .hero .logo{
     position:relative;
-    z-index: 3;;
+    z-index: 3;
+    max-width: 90%;
+    margin: auto;
 }
+
 
 header .hero .tagline{
     font-size: 1.5em;
