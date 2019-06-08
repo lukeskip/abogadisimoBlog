@@ -8,6 +8,10 @@
                     <?php include( locate_template('includes/related-posts-template.php', false, false) ); ?>
                 </div>
                 <?php the_content(); ?>
+                <div class="row">
+                    <div class="medium-4 columns"></div>
+                    <div class="medium-8 columns"></div>                
+                </div>
 
             <?php endwhile; else : ?>
                 <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
