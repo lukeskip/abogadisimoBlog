@@ -303,6 +303,19 @@ STARTS: SINGLE CONTENT
     color:#606060;
 }
 
+.single-post .meta{
+    padding: 40px 20px;
+    font-style: italic;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 20px;
+}
+
+.single-post .meta .author{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
 .single-post .excerpt{
     margin:50px auto;
     font-style: italic;

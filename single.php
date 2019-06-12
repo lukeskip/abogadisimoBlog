@@ -1,4 +1,7 @@
-<?php get_header('single'); ?>
+<?php 
+    get_header('single'); 
+    $author_id = get_post_field( 'post_author', get_the_ID() );
+?>
 <div class="container">
     <div class="row">
         <div class="content columns large-12 medium-12">
@@ -8,9 +11,17 @@
                     <?php include( locate_template('includes/related-posts-template.php', false, false) ); ?>
                 </div>
                 <?php the_content(); ?>
-                <div class="row">
-                    <div class="medium-4 columns"></div>
-                    <div class="medium-8 columns"></div>                
+                <div class="meta row ">
+                    <div class="large-4 small-12 column text-center">
+                        <img class="author" src="<?php echo get_avatar_url($author_id); ?>" alt="">
+                    </div>
+                    <div class="large-8 small-12 columns">
+                        <h4><?php the_author()?></h4>
+                        <p> 
+                            <?php the_author_meta('description')?>
+                        </p>
+                    </div>
+                    
                 </div>
 
             <?php endwhile; else : ?>
