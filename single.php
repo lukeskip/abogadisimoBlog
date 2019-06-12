@@ -15,7 +15,7 @@
                         <p> 
                             <?php the_author_meta('description')?>
                         </p>
-                        <?php the_author_meta('email'); ?>
+                        <p class="email"><?php the_author_meta('email'); ?></p>
                     </div>
                     
                 </div>

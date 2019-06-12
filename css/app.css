@@ -296,6 +296,10 @@ STARTS: SINGLE CONTENT
   border-radius: 100%;
 }
 
+.single-post .meta .email {
+  color: #8D8125;
+}
+
 .single-post .excerpt {
   margin: 50px auto;
   font-style: italic;

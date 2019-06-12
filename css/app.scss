@@ -316,6 +316,10 @@ STARTS: SINGLE CONTENT
     border-radius: 100%;
 }
 
+.single-post .meta .email{
+    color:$secondary;
+}
+
 .single-post .excerpt{
     margin:50px auto;
     font-style: italic;
