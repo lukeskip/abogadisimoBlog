@@ -286,8 +286,8 @@ STARTS: SINGLE CONTENT
 .single-post .meta {
   padding: 40px 20px;
   font-style: italic;
-  border-top: 1px solid #EEEEEE;
-  margin-top: 20px;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 20px;
 }
 
 .single-post .meta .author {
