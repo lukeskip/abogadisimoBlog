@@ -8,7 +8,7 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="meta row ">
                     <div class="large-3 small-12 column text-center">
-                        <img class="author author_<?php echo $author_id?>" src="<?php echo get_avatar_url($author_id); ?>" alt="">
+                        <img class="author author_<?php echo $author_id?>" src="<?php echo get_avatar_url($author_id,array('size'=>150)); ?>" alt="">
                     </div>
                     <div class="large-9 small-12 columns">
                         <h4><?php the_author()?></h4>
