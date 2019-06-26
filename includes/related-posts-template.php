@@ -1,13 +1,27 @@
 <div class="related">
     <h3>También te recomendamos...</h3>
     <?php 
-        $post_id = array(get_the_ID()); 
-        $related = new wp_Query( array(
-            'posts_per_page' => 3,
-            'post__not_in' 	=> $post_id,
-            'orderby'        => 'rand',
-            'order'      => 'ASC',
-        ));
+        $post_id = array(get_the_ID());
+        $tags = wp_get_post_tags($post_id);
+        if ($tags) {
+            $first_tag = $tags[0]->term_id;
+
+            $related = new wp_Query( array(
+                'posts_per_page' => 3,
+                'post__not_in' 	=> $post_id,
+                'orderby'       => 'rand',
+                'order'         => 'ASC',
+                'tag__in'       => array($first_tag),
+            ));
+        }else{
+            $related = new wp_Query( array(
+                'posts_per_page' => 3,
+                'post__not_in' 	=> $post_id,
+                'orderby'        => 'rand',
+                'order'      => 'ASC',
+            ));
+        }
+        
     ?>
     <?php if( $related->have_posts() ): while ( $related->have_posts() ) : $related->the_post(); ?>
         <article class="post">
