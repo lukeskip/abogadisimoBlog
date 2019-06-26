@@ -261,6 +261,14 @@ h4 a:hover{
     
 }
 
+.masonry-css-item .author{
+    font-style: italic;
+}
+
+.masonry-css-item .author:before{
+    content:'Por:'
+}
+
 .masonry-css-item:last-child {
     flex-grow: 1;    
 }

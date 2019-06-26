@@ -18,6 +18,9 @@
                     <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                     <div class="description">
                         <?php the_excerpt(); ?>
+                    </div>
+                    <div class="author">
+                        <?php the_author();?>
                     </div> 
                     <div class="link">
                         <a href="<?php the_permalink(); ?>">Leer más</a>
