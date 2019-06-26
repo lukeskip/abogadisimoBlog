@@ -1,6 +1,4 @@
-<div class="related">
-    <h3>También te recomendamos...</h3>
-    <?php 
+<?php 
         $post_id = array(get_the_ID());
         $tags = wp_get_post_tags($post_id);
         if ($tags) {
@@ -23,7 +21,12 @@
         }
         
     ?>
-    <?php if( $related->have_posts() ): while ( $related->have_posts() ) : $related->the_post(); ?>
+    <?php if( $related->have_posts() ):?>
+        
+<div class="related">
+    
+    <h3>También te recomendamos...</h3>
+    <?php while ( $related->have_posts() ) : $related->the_post(); ?>
         <article class="post">
             <div>
                 <div class="description">
@@ -37,12 +40,6 @@
         
     
     <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-    
-
-    <?php else : ?>
-
-    <p><?php __('Sin información'); ?></p>
-
-    <?php endif; ?>
+    <?php wp_reset_postdata(); ?> 
 </div>
+<?php endif; ?>
