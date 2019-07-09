@@ -43,3 +43,18 @@ function my_theme_archive_title( $title ) {
   return $title;
 }
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+// STARTS: OPTIONS PAGE ///////////////////////////////////////////////
+add_action('admin_menu', 'add_global_custom_options');
+
+function global_custom_options(){
+	get_template_part( 'includes/options-page');
+};
+
+
+function add_global_custom_options()
+{
+	add_options_page('Ajustes Jessica Cosmetics', 'Ajustes de Jessica Cosmetics', 'manage_options', 'functions','global_custom_options');
+}
+
+//ENDS: OPTION PAGE
