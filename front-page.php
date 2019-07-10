@@ -11,7 +11,13 @@
                         <?php the_post_thumbnail();?>
                     </div>
                 <?php endif; ?> -->
+                <?php if ( has_post_thumbnail() ):?>
+                    <div class="image">
+                        <?php the_post_thumbnail();?>
+                    </div>
+                <?php endif; ?>
                 <div class="info">
+                    
                     <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                     <div class="description">
                         <?php the_excerpt(); ?>
