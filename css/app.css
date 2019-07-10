@@ -267,10 +267,6 @@ h4 a:hover {
   content: "Por:";
 }
 
-.masonry-css-item:last-child {
-  flex-grow: 1;
-}
-
 .masonry-css-item:nth-child(7n+4), .masonry-css-item:nth-child(7n+5) {
   width: 48%;
 }
