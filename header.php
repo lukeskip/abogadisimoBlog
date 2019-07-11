@@ -29,7 +29,7 @@
 							<i class="fab fa-twitter"></i>
 						</a>
 						<?php endif; ?>
-						aaa
+						
 						<?php if(get_option('instagram')): ?>
 						<a target="_blank" href="<?php echo get_option('instagram') ?>" class="icon">
 							<i class="fab fa-instagram"></i>
