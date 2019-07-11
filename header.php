@@ -24,17 +24,18 @@
 						<a  href="<?php bloginfo('url'); ?>"><img width="120px" class="float-center" src="<?php  bloginfo('template_url'); ?>/img/logo-abogadisimo-white.png" alt=""></a>
 					</div>
 					<div class="social">
-						<?php if(get_option('twitter')): ?>
-						<a target="_blank" href="<?php echo get_option('twitter') ?>" class="icon">
+						
+						
+						<a target="_blank" href="https://twitter.com/Abogadisimo_Mx" class="icon">
 							<i class="fab fa-twitter"></i>
 						</a>
-						<?php endif; ?>
 						
-						<?php if(get_option('instagram')): ?>
-						<a target="_blank" href="<?php echo get_option('instagram') ?>" class="icon">
+						
+						
+						<a target="_blank" href="https://instagram.com/abogadisimo_mx?utm_source=ig_profile_share&igshid=y3rlpmaqk99" class="icon">
 							<i class="fab fa-instagram"></i>
 						</a>
-						<?php endif; ?>
+						
 					</div>
 					<button class="hamburger hamburger--spin" type="button">
 						<span class="hamburger-box">
