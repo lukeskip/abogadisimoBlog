@@ -26,14 +26,14 @@
 					<div class="social">
 						
 						
-						<a target="_blank" href="https://twitter.com/Abogadisimo_Mx" class="icon">
+						<!-- <a target="_blank" href="https://twitter.com/Abogadisimo_Mx" class="icon">
 							<i class="fab fa-twitter"></i>
-						</a>
+						</a> -->
 						
 						
 						
-						<a target="_blank" href="https://instagram.com/abogadisimo_mx?utm_source=ig_profile_share&igshid=y3rlpmaqk99" class="icon">
-							<i class="fab fa-instagram"></i>
+						<a target="_blank" href="https://www.facebook.com/Abogad%C3%ADsimo-303750980329500/" class="icon">
+							<i class="fab fa-facebook-square"></i>
 						</a>
 						
 					</div>
