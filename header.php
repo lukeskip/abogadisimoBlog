@@ -30,12 +30,12 @@
 							<i class="fab fa-twitter"></i>
 						</a>
 
-						<a target="_blank" href="https://www.instagram.com/abogadisimo_mx" class="icon">
+						<a target="_blank" href="https://instagram.com/abogadisimo_mx?utm_source=ig_profile_share&igshid=y3rlpmaqk99" class="icon">
 							<i class="fab fa-instagram"></i>
 						</a>
 					
 						
-						<a target="_blank" href="https://www.facebook.com/Abogad%C3%ADsimo-303750980329500/" class="icon">
+						<a target="_blank" href="https://www.facebook.com/AbogadisimoMx/" class="icon">
 							<i class="fab fa-facebook-square"></i>
 						</a>
 						

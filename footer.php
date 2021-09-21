@@ -1,5 +1,5 @@
 <footer>
-    Abogadísimo todos los derechos reservados, 2019
+    Abogadísimo todos los derechos reservados, 2021
 </footer>
 		
 <?php wp_footer();?>
